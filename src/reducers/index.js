@@ -1,6 +1,6 @@
 const initialState = {
   isLoading: false,
-  activity: {},
+  rocket: null,
   error: ""
 }
 

@@ -1,11 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const Activity = () => {
+const Activity = ({isLoading, rocket, error}) => {
   return (
     <>
-      SpaceX
+      {!rocket && (<h2>no rockets</h2>) }
     </>
   )
 }
 
-export default Activity
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    isLoading: state.isLoading,
+    rocket: state.rocket,
+    error: state.error
+  }
+}
+
+export default connect (
+  mapStateToProps, 
+  {}
+)(
+  Activity
+)
+
