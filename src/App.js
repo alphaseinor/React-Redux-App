@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Activity from './components/Activity'
+import Rocket from './components/Rocket'
 
 function App() {
   return (
     <>
-      <Activity />
+      <Rocket />
     </>
   );
 }
